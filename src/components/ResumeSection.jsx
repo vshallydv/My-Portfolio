@@ -4,23 +4,23 @@ import Navbar from "./Navbar";
 
 function ResumeSection({ onSelectSection }) {
   return (
-    <div className="bg-gray-100 p-8 rounded-lg shadow-md">
+    <div className="bg-zinc-800 p-8 rounded-lg shadow-md my-10 mx-5 text-white">
       <Navbar onSelectSection={onSelectSection} />
       <h2 className="text-2xl font-bold mb-4">Resume</h2>
 
       {/* Education */}
-      <div className="mb-6">
-        <h3 className="font-bold text-lg">Education</h3>
+      <div className="mb-6 ">
+        <h3 className="font-bold text-lg ">Education</h3>
         <p>Mvp's KBTCOE, 2019 — 2023</p>
-        <p>Instrumentation & Control Engineering (SGPA : 8.6)</p>
+        <p className="text-gray-400">Instrumentation & Control Engineering (SGPA : 8.6)</p>
       </div>
       <div className="mb-6">
         <p>C.M.C.S College, 2017 — 2019</p>
-        <p>HSC (Percentage : 62.46)</p>
+        <p className="text-gray-400">HSC (Percentage : 62.46)</p>
       </div>
       <div className="mb-6">
         <p>Sahaj Blossom High School, 2015 — 2016</p>
-        <p>SSC (Percentage : 73.20)</p>
+        <p className="text-gray-400">SSC (Percentage : 73.20)</p>
       </div>
 
       {/* Experience */}
@@ -32,7 +32,7 @@ function ResumeSection({ onSelectSection }) {
             - 1 year 2 months
           </p>
           <ul className="list-disc pl-8">
-            <li>
+            <li className="text-gray-400">
               Spearheading projects at RadicalX, driving innovative solutions
               and achieving measurable results.
             </li>
@@ -47,11 +47,11 @@ function ResumeSection({ onSelectSection }) {
             3 months
           </p>
           <ul className="list-disc pl-8">
-            <li>
+            <li className="text-gray-400">
               Specialized in front-end technologies, elevating web design, and
               optimizing user experiences.
             </li>
-            <li>
+            <li className="text-gray-400">
               Cultivated skills through hands-on experience, igniting a passion
               for impactful web development.
             </li>
@@ -68,11 +68,11 @@ function ResumeSection({ onSelectSection }) {
             Sep 2023)(Pune) - 2 months
           </p>
           <ul className="list-disc pl-8">
-            <li>
+            <li className="text-gray-400">
               Managed networking, access control systems, and smart building
               integration using TCP/IP and VLANs.
             </li>
-            <li>
+            <li className="text-gray-400">
               The commissioning of the system was performed by using software
               tools like Netx Automation, I app, Bootloader, and Communication
               Software.
@@ -85,7 +85,7 @@ function ResumeSection({ onSelectSection }) {
         <p>C2TC Training Program - Capgemini</p>
         <p>TNS India Foundation (Oct 2022 — Jan 2023)(Nashik)</p>
         <ul className="list-disc pl-8">
-          <li>
+          <li className="text-gray-400">
             Introduced technologies: SQL, Core Java 8, JPA with Hibernate, GIT,
             Spring 5.0, Spring Boot, HTML5, CSS3, JavaScript, TypeScript, React
             JS, soft skills.

@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 function PortfolioSection({ onSelectSection }) {
   return (
-    <div className="bg-gray-100 p-8 rounded-lg shadow-md">
+    <div className="bg-zinc-800 p-8 rounded-lg shadow-md my-10 mx-5">
       <Navbar onSelectSection={onSelectSection} />
       <h2 className="text-2xl font-bold mb-4">Portfolio</h2>
 
