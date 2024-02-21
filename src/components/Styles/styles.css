@@ -1,0 +1,199 @@
+/*-----------------------------------*\
+  #RESUME
+\*-----------------------------------*/
+:root {
+  --fs-6: 16px; /* Example font size */
+  --vegas-gold: #ffd700; /* Example color */
+  --fw-400: 400; /* Example font weight */
+  --jet: #343434; /* Example color */
+  --text-gradient-yellow: #ffff00; /* Example color */
+  --light-gray: #ccc; /* Example color */
+}
+
+.article-title {
+  margin-bottom: 30px;
+}
+
+/**
+ * education and experience 
+ */
+
+.timeline {
+  margin-bottom: 30px;
+}
+.timeline-icon {
+  color: #854ce6; /* Adjust the color of the icon */
+  font-size: 1.2rem; /* Adjust the size of the icon */
+  margin-right: 0.3rem; /* Adjust the spacing between the icon and text */
+}
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.timeline-list {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-list span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--jet);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+.max-h-custom {
+  max-height: 89vh; /* Adjust the value as needed */
+}
+.max-h-customq {
+  max-height: 100rem; /* Adjust the value as per your requirement */
+}
+.custom-margin {
+  margin-top: 8rem;
+}
+.custom-marginq {
+  margin-top: 6rem;
+}
+.contact {
+  margin-top: 6rem;
+}
+.success-msg{
+  margin-top: 12rem;
+}
+.textarea-small {
+  width: 54rem/* Specify your desired width */
+}
+
+/**
+ * skills 
+ */
+
+.skills-title {
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  padding: 20px;
+}
+
+.skills-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.skill .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.skill .title-wrapper data {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+
+.skill-progress-bg {
+  background: var(--jet);
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skill-progress-fill {
+  background: var(--text-gradient-yellow);
+  height: 100%;
+  border-radius: inherit;
+}
+.skill .title-wrapper h5 {
+  color: #cccccc;
+}
+.skill .title-wrapper p {
+  color: white;
+}
+/* Styling the button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ec1d1d; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 16px; /* Button text size */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  text-decoration: none; /* Remove underlines from links */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #2980b9; /* Button background color on hover */
+}
+
+
+/* customScrollbar.css */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

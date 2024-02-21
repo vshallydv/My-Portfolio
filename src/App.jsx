@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import AboutMeSection from "./components/AboutMeSection";
-import ResumeSection from "./components/ResumeSection";
-import PortfolioSection from "./components/PortfolioSection";
+import PortfolioSection from "./components/Work";
 import ContactForm from "./components/ContactForm";
+import Education from "./components/Resume";
+import "./components/Styles/styles.css";
 
 function App() {
   const [selectedSection, setSelectedSection] = useState("about");
@@ -14,15 +15,15 @@ function App() {
   };
 
   return (
-    <div className="flex bg-zinc-950 h-screen w-screen">
+    <div className="flex bg-smoky-black h-screen   w-screen">
       <Sidebar onSelectSection={navigateToSection} />
-      <div className="flex-1 flex flex-col">
-        <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 flex flex-col ">
+        <div className="flex-1 overflow-y-auto max-h-customqa ">
           {selectedSection === "about" && (
-            <AboutMeSection onSelectSection={navigateToSection} />
+            <AboutMeSection  onSelectSection={navigateToSection} />
           )}
           {selectedSection === "resume" && (
-            <ResumeSection onSelectSection={navigateToSection} />
+            <Education onSelectSection={navigateToSection} />
           )}
           {selectedSection === "work" && (
             <PortfolioSection onSelectSection={navigateToSection} />

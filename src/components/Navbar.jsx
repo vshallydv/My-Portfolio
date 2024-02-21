@@ -3,7 +3,7 @@ import React from "react";
 
 function Navbar({ onSelectSection }) {
   return (
-    <div className="bg-zinc-700 p-2 flex justify-end rounded-lg float-end">
+    <div className="bg-jet p-2 flex justify-end rounded-lg float-end text-white">
       <div
         className="p-2 mr-2 cursor-pointer"
         onClick={() => onSelectSection("about")}
