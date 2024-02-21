@@ -90,7 +90,7 @@ function PortfolioSection({ onSelectSection }) {
     {
       name: "Technical Careers Training Program",
       link: "https://drive.google.com/file/d/1laBMvxrUzMOvGC3_0vHrqTM8pn2tU97k/view",
-      imageSrc: "/src/assets/C2TC.jpeg",
+      imageSrc: "/public/static/images/C2TC.jpeg",
     },
     {
       name: "Cloud Computing IBM",
